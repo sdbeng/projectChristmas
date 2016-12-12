@@ -1,0 +1,107 @@
+html{
+    box-sizing: border-box;
+}
+*, *:before, *::after{
+  box-sizing: inherit;
+}
+body{
+  /* temporary gray bg & borders for design /positioning */
+  background-color: LightGray;
+
+  letter-spacing: 0.03em;
+}
+div{
+  border: 1px solid Chocolate;
+}
+.top-nav{
+  background-color: #fff;
+  position: fixed;
+  width: 100%;
+  border-bottom: 1px solid #ddd;
+  z-index: 9999;
+}
+.top-nav > .content{
+  /*width: 970px;*/
+  height: 4.375rem;
+  /*margin: 0 auto;*/
+}
+.content{
+  padding: 0 15px;
+  margin: 0 auto;
+  min-width: 37.5rem;
+}
+.top-nav .links{
+  float: right;
+  font-family: 'Roboto', sans-serif;
+  color: #838994;
+  font-size: 1em;
+  margin-top: 25px;
+  -webkit-font-smoothing:antialiased;
+}
+.top-nav .logo{
+  height: 4.3rem;
+}
+ul {
+  list-style: none;
+}
+/*header, article, aside, footer, menu, nav, section {
+  display: block;
+}*/
+.top-nav .links li.active{
+  color: #4c5058;
+  font-weight: 500;
+}
+.top-nav .links li{
+  display: inline-block;
+  margin-left: 1.5em;
+}
+.top-nav .links li:hover{
+  cursor: pointer;
+  color: #333;
+}
+/* intro section*/
+.intro-section1{
+  /* ojo the relative path must be ../img/path_to_image */
+  background-image: url('../img/first-background.jpg');
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 45.9rem;
+  overflow: auto;
+}
+.section1-content{
+
+  padding: 0 0.938rem;
+  margin: 0 auto;
+
+  min-width: 37.5rem;
+}
+.section1-content h1{
+  margin-top: 17.5rem;
+  font-size: 3.125rem;
+}
+.section1-content h1, .section1-content h3{
+  color:#fff;
+  text-align:center;
+  font-weight: 300;
+}
+.section1-content h3{
+  margin-top: 1.25rem;
+  font-size: 1.5rem;
+}
+.section1-content .buttons {
+    color: white;
+    text-align: center;
+    margin-top: 1.563rem;
+}
+button {
+    width: 9.688rem;
+    background-color: #f15a29;
+    border-color: #f15a29;
+    text-shadow: none;
+    border-style: none;
+    border-radius: 4px;
+    padding: 1rem 1.5rem;
+    color: white;
+    font-size: 1.125rem;
+}
